@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Project Introduce</title>
+		<link rel="shortcut icon" type="image/x-icon" href="../img/icon.png" media="screen" />
+		<link rel="stylesheet" href="../css/iconfont.css" />
+	</head>
+	<style>
+		html,body{
+			margin: 0;
+			padding: 0;
+			height: 100%;
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+		}
+		#area{
+			width: 550px;
+			height: 500px;
+			margin-left: 5%;
+			position: absolute;
+			border:1px solid #EEE;
+			background-color: white;
+		}
+		.introduce_div{
+			margin-left: 50%;
+			width: 40%;
+			font-family: "times new roman", Times, serif;
+		}
+		hr{
+				height: 0;
+				border: 1px solid #DFDFDF;
+			}
+			p{
+				text-indent: 2em;
+			}
+			img{
+				text-align: center;
+			}
+	</style>
+	<script type="text/javascript" src="../js/jquery.js" ></script>
+	<script type="text/javascript" src="../js/zls.plugin.js" ></script>
+	<body>
+		<div id="area"></div>
+		<div class="introduce_div">
+			<h1>Simply to Processing picture with JS</h1>
+			<a href="https://zhenxingxiao.github.io/zls-spp/">Visit the source code</a>
+			<hr />
+			<p>
+				This application is just for processing the picture in the web with javascript. You can 
+				draw some easy line and orthers.
+			</p>
+		</div>
+		<script type="text/javascript">
+			$(()=>{
+				$('#area').init_ZLSP('../img/ex.jpg');
+			})
+		</script>
+	</body>
+</html>

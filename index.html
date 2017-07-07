@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Project Introduce</title>
+		
+	</head>
+	<style>
+		html,body{
+			margin: 0;
+			padding: 0;
+			height: 100%;
+			width: 100%;
+		}
+		#area{
+			width: 550px;
+			height: 500px;
+			margin-left: 5%;
+			position: absolute;
+			border:1px solid #EEE;
+			background-color: white;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.js" ></script>
+	<script type="text/javascript" src="js/zls.plugin.js" ></script>
+	<body>
+		<br />&nbsp;
+		<div id="area"></div>
+		<script type="text/javascript">
+			$(()=>{
+				$('#area').init_ZLSP('./img/ex.jpg');
+			})
+		</script>
+	</body>
+</html>
